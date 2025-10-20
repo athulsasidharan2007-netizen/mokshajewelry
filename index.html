@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Moksha Jewellery</title>
+<style>
+/* Body + background image */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-image: url('moksha-logo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  animation: fadeIn 2s ease;
+}
+
+/* Overlay for better text visibility */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Navbar */
+nav {
+  background: rgba(164, 92, 58, 0.8);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  backdrop-filter: blur(10px);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+nav a:hover { color: #ffd9a0; }
+
+/* Hero section */
+.hero {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  animation: slideUp 1.5s ease;
+}
+.hero h1 {
+  font-size: 3em;
+  color: #fff0dc;
+  text-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+.hero p {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #fff;
+}
+.hero button {
+  margin-top: 30px;
+  background: #a45c3a;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.hero button:hover {
+  background: #87432b;
+  transform: scale(1.07);
+}
+
+/* Footer */
+footer {
+  background: rgba(164, 92, 58, 0.8);
+  color: white;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+  backdrop-filter: blur(10px);
+}
+
+/* Animations */
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes slideUp {
+  from {transform: translateY(40px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+</style>
+</head>
+<body>
+<div class="overlay"></div>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="necklaces.html">Necklaces</a>
+  <a href="earrings.html">Earrings</a>
+  <a href="cart.html">Cart 🛒</a>
+</nav>
+
+<section class="hero">
+  <h1>Welcome to Moksha Jewelry</h1>
+  <p>Where elegance meets craftsmanship. Discover our handcrafted necklaces and earrings.</p>
+  <button onclick="window.location.href='necklaces.html'">Shop Now</button>
+</section>
+
+<footer>
+  © 2025 Moksha Jewellery | Crafted with 💛
+</footer>
+</body>
+</html>
